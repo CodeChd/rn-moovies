@@ -4,7 +4,9 @@ import Entypo from "@expo/vector-icons/Entypo";
 import * as SplashScreen from "expo-splash-screen";
 import * as Font from "expo-font";
 import { useFonts } from "expo-font";
-import { Asset, useAssets } from "expo-asset";
+import { useAssets } from "expo-asset";
+import Tabs from "./js/navigation/Tabs";
+import { NavigationContainer } from "@react-navigation/native";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -30,10 +32,13 @@ export default function App() {
   }
 
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>
-        SplashScreen Demo! <Entypo name="rocket" size={20} />
-      </Text>
-    </View>
+    <NavigationContainer>
+      {/* <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+        <Text>
+          SplashScreen Demo! <Entypo name="rocket" size={20} />
+        </Text> */}
+      <Tabs />
+      {/* </View> */}
+    </NavigationContainer>
   );
 }
