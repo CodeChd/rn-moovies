@@ -12,6 +12,7 @@
     "@expo/vector-icons": "^14.0.0",
     "@react-navigation/bottom-tabs": "^6.5.12",
     "@react-navigation/native": "^6.1.10",
+    "@react-navigation/native-stack": "^6.9.22",
     "expo": "~50.0.6",
     "expo-asset": "~9.0.2",
     "expo-splash-screen": "~0.26.4",

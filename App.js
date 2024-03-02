@@ -7,7 +7,8 @@ import { useFonts } from "expo-font";
 import { useAssets } from "expo-asset";
 import Tabs from "./js/navigation/Tabs";
 import { NavigationContainer, DarkTheme, DefaultTheme } from "@react-navigation/native";
-
+import Stack from "./js/navigation/Stack";
+ 
 
 SplashScreen.preventAutoHideAsync();
 
@@ -39,7 +40,9 @@ export default function App() {
         <Text>
           SplashScreen Demo! <Entypo name="rocket" size={20} />
         </Text> */}
-      <Tabs />
+      {/* <Tabs /> */}
+
+      <Stack/>
       {/* </View> */}
     </NavigationContainer>
   );
